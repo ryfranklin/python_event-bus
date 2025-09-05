@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-event-bus"
+version = "0.1.0"
+description = "Lightweight publish/subscribe Event Bus (sync & async)"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Ryan Franklin" }]
+
+# Optional but handy for pytest
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["."]
+testpaths = ["tests"]
+async_mode = "auto"
+
+# Tell setuptools where the packages are (no setup.cfg needed)
+[tool.setuptools]
+packages = ["event_bus"]
