@@ -1,0 +1,54 @@
+# --- Python basics ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Packaging / build ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Testing / coverage ---
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.pytest_cache/
+.nox/
+
+# --- IDE / editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Jupyter / notebooks ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Docker ---
+*.pid
+*.seed
+*.pid.lock
+
+# --- Custom project ignores ---
+# Local configs or secrets
+*.env
+config.yaml
